@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Baloo+Bhai+2:wght@400..800&family=Mozilla+Headline:wght@200..700&family=Poppins&display=swap');
+body {
+  margin: 0;
+  background: url("IN-en-20250825-TRIFECTA-perspective_a3209894-0b01-4ddb-b57e-f32165e20a3f_large.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* overlay */
+  filter: brightness(0.7) contrast(1.2);
+  z-index: 0;
+}
+
+nav, .center {
+  position: relative;
+  z-index: 1; /* content above overlay */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 12px 150px;
+}
+.rightlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.box1{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid lightslategray;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.box1 select{
+    background-color: black;
+    color: white;
+    border: none;
+}
+nav button{
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    padding: 7px 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: rgb(196, 63, 63);
+}
+.center{
+    color: white;
+    text-align: center;
+    padding:150px 10px ;
+    font-family: "Ancizar Sans", sans-serif;
+}
+.center h1{
+    font-size: 65px;
+    padding: 0 460px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+.center h3{
+    transform: translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 8px;  */
+    font-size: 22px;
+}
+.center p{
+    font-size: 18px;
+}
+.Email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Email input{
+    border: 1px solid rgb(147, 143, 143);
+    background-color: transparent;
+    font-weight: 300;
+    color: gainsboro;
+    font-size: 17px;
+    width: 300px;
+    padding: 13px 30px 16px ;
+    border-radius: 5px;
+}
+.Email input::placeholder{
+    color: gainsboro;
+}
+.Email label{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 23px;
+    background-color: red;
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+}
+.box1 svg path {
+  fill: white;
+}
+#keyboard-arrow-right polygon {
+  fill: white;
+}
