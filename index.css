@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Baloo+Bhai+2:wght@400..800&family=Mozilla+Headline:wght@200..700&family=Poppins&display=swap");
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 /* .dark {
   margin: 0;
@@ -24,12 +25,12 @@ nav, .center {
 } */
 
 .dark {
-  position: fixed;
+  position: absolute;
   z-index: -1000;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 .dark img {
   filter: brightness(0.35) contrast(100%);
@@ -82,8 +83,7 @@ nav button:hover {
 .center {
   color: white;
   text-align: center;
-  padding: 150px 10px;
-  font-family: "Ancizar Sans", sans-serif;
+  padding: 150px 10px 139px;
 }
 .center h1 {
   font-size: 70px;
@@ -109,6 +109,8 @@ nav button:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 .Email input {
   border: 1px solid rgb(147, 143, 143);
@@ -116,15 +118,15 @@ nav button:hover {
   font-weight: bold;
   color: gainsboro;
   font-size: 17px;
-  width: 300px;
+  width: 422px;
   padding: 13px 30px 16px;
   border-radius: 5px;
 }
 .Email input::placeholder {
   color: gainsboro;
 }
-.Email label {
-  width: 130px;
+/* .Email label {
+  width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,12 +137,90 @@ nav button:hover {
   padding: 10px 20px 10px;
   border-radius: 5px;
   font-weight: bold;
+} */
+.Email button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 0px;
+    width: 210px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.Email button:hover{
+    background-color: darkred;
 }
 .box1 svg path {
   fill: white;
 }
 #keyboard-arrow-right polygon {
   fill: white;
+}
+.fill{
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    width: 100%;
+    height: 100%;
+}
+.trending{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-shadow: inset -2px 18px 16px 7px ;
+    background-color: black;
+    height: 370px;
+    scrollbar-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+.trending h2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+.trending h2{
+    color: white;
+    padding: 0 100px 0;
+}
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+.scroll-btn.left { left: 10px; }
+.scroll-btn.right { right: 10px; }
+.trending ul{
+     overflow-x: auto;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    padding: 0 110px 0;
+}
+.trending ul::-webkit-scrollbar{
+    display: none;
+}
+.trending ul li img{
+    border-radius: 7px;
 }
 .reason {
   /* display: grid; */
@@ -166,7 +246,7 @@ nav button:hover {
 .brgrid {
   background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
   border-radius: 8px;
-  height: 335px;
+  height: 300px;
   width: 297px;
   padding: 5px 20px;
   position: relative;
@@ -180,5 +260,5 @@ nav button:hover {
   right: 1rem;
 }
 .brgrid h3{
-    font-size: 27px;
+    font-size: 24px;
 }
