@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Baloo+Bhai+2:wght@400..800&family=Mozilla+Headline:wght@200..700&family=Poppins&display=swap');
-body{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Baloo+Bhai+2:wght@400..800&family=Mozilla+Headline:wght@200..700&family=Poppins&display=swap");
+body {
+  margin: 0;
 }
-.dark {
+/* .dark {
   margin: 0;
   background: url("IN-en-20250825-TRIFECTA-perspective_a3209894-0b01-4ddb-b57e-f32165e20a3f_large.jpg") center/cover no-repeat;
   min-height: 100vh;
@@ -20,108 +20,121 @@ body{
 
 nav, .center {
   position: relative;
-  z-index: 1; /* content above overlay */
-}
+  z-index: 1; /* content above overlay
+} */
 
+.dark {
+  position: fixed;
+  z-index: -1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.dark img {
+  filter: brightness(0.35) contrast(100%);
+  width: 100%;
+  height: 100%;
+}
 nav {
-    box-shadow: inset -2px 18px 16px 7px;
-    display: flex;
-    justify-content: space-around ;
-    align-items: center;
-    padding: 16px 10px;
-    gap: 580px;
+  box-shadow: inset -2px 18px 16px 7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 10px;
+  gap: 580px;
 }
-.rightlogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.rightlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-.box1{
-    display: flex;
-    gap: 3px;
-    justify-content: center;
-    align-items: center;
-    border: 1.5px solid lightslategray;
-    padding: 8px 12px;
-    border-radius: 5px;
+.box1 {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid lightslategray;
+  padding: 8px 12px;
+  border-radius: 5px;
 }
-.box1 select{
-    font-weight: 700;
-    font-size: 18px;
-    background-color: transparent;
-    color: white;
-    border: none;
+.box1 select {
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  border: none;
 }
-nav button{
-    border: none;
-    background-color: red;
-    border-radius: 5px;
-    padding: 8px 18px;
-    color: white;
-    font-weight:bold;
-    cursor: pointer;
-    font-size: 15px;
+nav button {
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
 }
-nav button:hover{
-    background-color: rgb(196, 63, 63);
+nav button:hover {
+  background-color: rgb(196, 63, 63);
 }
-.center{
-    color: white;
-    text-align: center;
-    padding:150px 10px ;
-    font-family: "Ancizar Sans", sans-serif;
+.center {
+  color: white;
+  text-align: center;
+  padding: 150px 10px;
+  font-family: "Ancizar Sans", sans-serif;
 }
-.center h1{
-    font-size: 70px;
-    padding: 0px 24vw 0 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
+.center h1 {
+  font-size: 70px;
+  padding: 0px 24vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
 }
-.center h3{
-    transform: translateY(-30px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-bottom: 8px;  */
-    font-size: 28px;
+.center h3 {
+  transform: translateY(-30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 8px;  */
+  font-size: 28px;
 }
-.center p{
-    font-size: 18px;
+.center p {
+  font-size: 18px;
 }
-.Email{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.Email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.Email input{
-    border: 1px solid rgb(147, 143, 143);
-    background-color: transparent;
-    font-weight: bold;
-    color: gainsboro;
-    font-size: 17px;
-    width: 300px;
-    padding: 13px 30px 16px ;
-    border-radius: 5px;
+.Email input {
+  border: 1px solid rgb(147, 143, 143);
+  background-color: transparent;
+  font-weight: bold;
+  color: gainsboro;
+  font-size: 17px;
+  width: 300px;
+  padding: 13px 30px 16px;
+  border-radius: 5px;
 }
-.Email input::placeholder{
-    color: gainsboro;
+.Email input::placeholder {
+  color: gainsboro;
 }
-.Email label{
-    width: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    color: white;
-    font-size: 23px;
-    background-color: red;
-    padding: 10px 20px 10px;
-    border-radius: 5px;
-    font-weight: bold;
+.Email label {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 23px;
+  background-color: red;
+  padding: 10px 20px 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .box1 svg path {
   fill: white;
@@ -129,41 +142,43 @@ nav button:hover{
 #keyboard-arrow-right polygon {
   fill: white;
 }
-.reason{
-    display: grid;
-    color: white;
-    background-color: black;
-    padding-top: 8px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    width: 100vw;
+.reason {
+  /* display: grid; */
+  color: white;
+  background-color: black;
+  padding-top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100vw;
 }
-.reason h2{
-    padding: 5px 0 0 90px;
+.reason h2 {
+  padding: 5px 0 0 90px;
 }
-.rgrid{
-    padding: 0 139px 0 85px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 26px;
-    /* background: linear-gradient(149deg, #192247 0%, #210e17 96.86%); */
+.rgrid {
+  padding: 0 139px 0 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 26px;
+  /* background: linear-gradient(149deg, #192247 0%, #210e17 96.86%); */
 }
-.brgrid{
-    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-    border-radius: 8px;
-    height: 280px;
-    width: 280px;
-    padding: 5px 20px;
-    position: relative;
+.brgrid {
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 8px;
+  height: 335px;
+  width: 297px;
+  padding: 5px 20px;
+  position: relative;
 }
-.rgrid p{
-    color: lightgray;
+.rgrid p {
+  color: lightgray;
 }
-.svg{
-    position: absolute;
-    bottom: 0rem;
-    right: 1rem;
+.svg {
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
 }
-
+.brgrid h3{
+    font-size: 27px;
+}
