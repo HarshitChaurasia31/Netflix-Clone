@@ -47,34 +47,39 @@ nav, .center {
 }
 
 nav {
-  box-shadow: inset -2px 18px 16px 7px;
+  box-shadow: inset -0.125rem 1.125rem 1rem 0.5rem;
+  /* px → rem (1rem ~ 16px) */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 16px 10px;
-  gap: 580px;
+  padding: 1rem 0.625rem;
+  /* 16px → 1rem, 10px → 0.625rem */
+  gap: 10vw;
 }
 
 .rightlogo {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .box1 {
   display: flex;
-  gap: 3px;
+  gap: 0.2rem;
+  /* 3px → ~0.2rem */
   justify-content: center;
   align-items: center;
-  border: 1.5px solid lightslategray;
-  padding: 8px 12px;
-  border-radius: 5px;
+  border: 0.1rem solid lightslategray;
+  /* 1.5px → ~0.1rem */
+  padding: 0.5rem 0.75rem;
+  /* 8px → 0.5rem, 12px → 0.75rem */
+  border-radius: 0.3rem;
 }
 
 .box1 select {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: transparent;
   color: white;
   border: none;
@@ -88,12 +93,15 @@ nav {
 nav button {
   border: none;
   background-color: red;
-  border-radius: 5px;
-  padding: 8px 18px;
+  border-radius: 0.3rem;
+  /* 5px → ~0.3rem */
+  padding: 0.5rem 1.1rem;
+  /* 8px → 0.5rem, 18px → 1.1rem */
   color: white;
-  font-weight: bold;
+  font-weight: 700;
+  /* bold → numeric weight */
   cursor: pointer;
-  font-size: 15px;
+  font-size: 0.94rem;
 }
 
 nav button:hover {
@@ -102,50 +110,49 @@ nav button:hover {
 
 .center {
   color: white;
-  text-align: center;
-  padding: 150px 10px 139px;
+text-align: center;
+padding: 9.4rem 0.6rem 8.7rem;
 }
 
 .center h1 {
-  font-size: 70px;
-  padding: 0px 24vw 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
+  font-size: 4.375rem;
+padding: 0 24vw 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 800;
 }
 
 .center h3 {
-  transform: translateY(-30px);
+  transform: translateY(-1.9rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-bottom: 8px;  */
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .center p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .Email {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
 }
 
 .Email input {
-  border: 1px solid rgb(147, 143, 143);
-  background-color: transparent;
-  font-weight: bold;
-  color: gainsboro;
-  font-size: 17px;
-  width: 422px;
-  padding: 13px 30px 16px;
-  border-radius: 5px;
+  border: 0.06rem solid rgb(147, 143, 143);
+background-color: transparent;
+font-weight: 700;
+color: gainsboro;
+font-size: 1.06rem;
+width: 26.4rem;
+padding: 0.8rem 1.9rem 1rem;
+border-radius: 0.3rem;
 }
 
 .Email input::placeholder {
@@ -167,17 +174,17 @@ nav button:hover {
 } */
 .Email button {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  border: none;
-  background-color: red;
-  border-radius: 5px;
-  color: white;
-  padding: 10px 0px;
-  width: 210px;
-  font-size: 26px;
-  font-weight: bold;
+justify-content: center;
+align-items: center;
+gap: 0.3rem;
+border: none;
+background-color: red;
+border-radius: 0.3rem;
+color: white;
+padding: 0.6rem 0;
+width: 13.1rem;
+font-size: 1.6rem;
+font-weight: 700;
 }
 
 .Email button:hover {
@@ -204,12 +211,10 @@ nav button:hover {
 }
 
 .trending {
-  /* margin: 0; */
-  /* padding: 0; */
-  box-shadow: inset -2px 18px 16px 7px;
+  box-shadow: inset -0.125rem 1.125rem 1rem 0.44rem;
   background-color: black;
-  height: 440px;
-  scrollbar-width: 0;
+  height: 27.5rem;
+  scrollbar-width: none;
   overflow: hidden;
   position: relative;
 }
@@ -234,40 +239,41 @@ nav button:hover {
 
 .trending h2 {
   color: white;
-  padding: 0 100px 0;
+padding: 0 6.25rem 0;
+
 }
 
 .scroll-btn {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 2;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+font-size: 1.5rem;
+padding: 0.6rem;
+cursor: pointer;
+border-radius: 50%;
+z-index: 2;
 }
 
 .scroll-btn.left {
-  left: 10px;
+  left: 0.6rem;
 }
 
 .scroll-btn.right {
-  right: 10px;
+  right: 0.6rem;
 }
 
 .trending ul {
   width: 56vw;
-  overflow-x: auto;
-  display: flex;
-  list-style: none;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5px;
-  padding: 0 266px 0;
+overflow-x: auto;
+display: flex;
+list-style: none;
+justify-content: flex-start;
+align-items: center;
+gap: 0.3rem;
+padding: 0 16.6rem 0;
 }
 
 .trending ul::-webkit-scrollbar {
@@ -280,55 +286,58 @@ nav button:hover {
 }
 
 .trending ul li img {
-  border-radius: 7px;
+  border-radius: 1.44rem;
 }
 
 .trending ul li p {
-  text-shadow: 2px 3px 2px white;
-  -webkit-text-stroke: 2px rgb(212, 212, 212);
-  font-size: 100px;
-  font-weight: 900;
-  transform: translateX(25px) translateY(110px);
-  position: sticky;
+  text-shadow: 0.125rem 0.19rem 0.125rem white;
+-webkit-text-stroke: 0.125rem rgb(212, 212, 212);
+font-size: 6.25rem;
+font-weight: 900;
+transform: translateX(1.56rem) translateY(6.9rem);
+position: sticky;
 }
-#ten{
-  transform: translateX(68px) translateY(110px);
-  position: sticky;
+
+#ten {
+  transform: translateX(4.25rem) translateY(6.9rem);
+position: sticky;
 }
-.ten{
-  transform: translateX(-65px);
+
+.ten {
+  transform: translateX(-4.06rem);
 }
+
 .reason {
   /* display: grid; */
   color: white;
-  background-color: black;
-  padding-top: 8px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  width: 100vw;
+background-color: black;
+padding-top: 0.5rem;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+width: 100vw;
 }
 
 .reason h2 {
-  padding: 5px 0 0 90px;
+  padding: 0.3rem 0 0 5.6rem;
 }
 
 .rgrid {
-  padding: 0 139px 0 85px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 26px;
+  padding: 0 8.7rem 0 5.3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-template-columns: repeat(4, 1fr);
+column-gap: 1.6rem;
   /* background: linear-gradient(149deg, #192247 0%, #210e17 96.86%); */
 }
 
 .brgrid {
-  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-  border-radius: 8px;
-  height: 300px;
-  width: 297px;
-  padding: 5px 20px;
-  position: relative;
+ background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+border-radius: 0.5rem;
+height: 18.75rem;
+width: 18.6rem;
+padding: 0.3rem 1.25rem;
+position: relative;
 }
 
 .rgrid p {
@@ -342,21 +351,21 @@ nav button:hover {
 }
 
 .brgrid h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .questions {
   background-color: black;
-  color: white;
-  padding: 35px 0 2px 0;
+color: white;
+padding: 2.2rem 0 0.1rem 0;
 }
 
 .questions h2 {
-  padding: 5px 0 0 90px;
+padding: 0.3rem 0 0 5.6rem;
 }
 
 .asked {
-  padding: 5px 0 0 90px;
+  padding: 0.3rem 0 0 5.6rem;
 }
 
 .asked ul {
@@ -371,11 +380,10 @@ nav button:hover {
 
 .faq {
   background-color: rgb(53, 53, 53);
-  width: 78vw;
-  /* border-radius: 12px; */
-  margin: 12px auto;
-  overflow: hidden;
-  transition: background-color 0.3s ease;
+width: 78vw;
+margin: 0.75rem auto;
+overflow: hidden;
+transition: background-color 0.3s ease;
 }
 
 .faq:hover {
@@ -385,13 +393,13 @@ nav button:hover {
 
 .faq>summary {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 20px 24px;
-  cursor: pointer;
-  list-style: none;
+justify-content: space-between;
+align-items: center;
+font-size: 1.56rem;
+font-weight: 500;
+padding: 1.25rem 1.5rem;
+cursor: pointer;
+list-style: none;
 }
 
 .faq>summary::-webkit-details-marker,
@@ -411,18 +419,18 @@ nav button:hover {
 }
 
 .faq p {
-  padding: 0 24px 20px 24px;
-  font-size: 25px;
-  line-height: 1.6;
-  color: white;
-  animation: fadeIn 0.3s ease;
+  padding: 0 1.5rem 1.25rem 1.5rem;
+font-size: 1.5625rem;
+line-height: 1.6;
+color: white;
+animation: fadeIn 0.3s ease;
 }
 
 /* smooth text fade */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY( -3.125rem);
   }
 
   to {
@@ -433,13 +441,13 @@ nav button:hover {
 
 .bottom {
   background-color: black;
-  padding: 40px 0 0 0;
+padding: 2.5rem 0 0 0;
 }
 
 .contact-us {
   background-color: black;
-  color: gainsboro;
-  padding: 40px 0 1px 70px;
+color: gainsboro;
+padding: 2.5rem 0 0.0625rem 4.375rem;
 }
 
 .contact-us a {
@@ -448,7 +456,7 @@ nav button:hover {
 
 footer {
   background-color: black;
-  padding: 20px 0 0 0;
+padding: 1.25rem 0 0 0;
 }
 
 .links {
@@ -457,11 +465,11 @@ footer {
 }
 
 .links ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 15px;
-  justify-items: start;
-  align-items: center;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+row-gap: 0.9375rem;
+justify-items: start;
+align-items: center;
 }
 
 .links ul li a {
@@ -473,17 +481,17 @@ footer {
 }
 
 .lang-changer {
-  width: 10vw;
-  padding: 20px 2px 3px 58px;
+ width: 10vw;
+padding: 1.25rem 0.125rem 0.1875rem 3.625rem;
 }
 
 .box2 {
-  padding: 11px 0 11px 0;
-  width: 150px;
-  column-gap: 3px;
+  padding: 0.6875rem 0 0.6875rem 0;
+width: 9.375rem;
+column-gap: 0.1875rem;
 }
 
 .end {
   color: gainsboro;
-  padding: 20px 2px 200px 58px;
+padding: 1.25rem 0.125rem 12.5rem 3.625rem;
 }
