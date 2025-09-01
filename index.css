@@ -63,10 +63,12 @@ nav {
   justify-content: center;
   gap: 0.8rem;
 }
-.logo svg{
+
+.logo svg {
   width: 175px;
   height: 100px;
 }
+
 .box1 {
   display: flex;
   gap: 0.2rem;
@@ -220,9 +222,9 @@ nav button:hover {
   background-color: black;
   height: 27.5rem;
   scrollbar-width: none;
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
-  box-shadow:  inset 0px 20px 20px 0px rgb(45 61 124 / 60%), inset 0px 20px 10px 0px rgb(233 233 233 / 8%);
+  box-shadow: inset 0px 20px 20px 0px rgb(45 61 124 / 60%), inset 0px 20px 10px 0px rgb(233 233 233 / 8%);
 }
 
 .trending h2:before {
@@ -281,6 +283,7 @@ nav button:hover {
   align-items: center;
   gap: 0.3rem;
   padding: 0 17.6rem 0;
+  overflow-y: hidden;
 }
 
 .trending ul::-webkit-scrollbar {
@@ -502,10 +505,121 @@ footer {
   color: gainsboro;
   padding: 1.25rem 0.125rem 0.5rem 19rem;
 }
+
+.contact-us h3 {
+  padding: 1rem 0 0 15rem
+}
+
+.end1 {
+  color: gray;
+  padding: 0rem 0.125rem 10rem 19rem;
+}
+
+@media only screen and (max-width:500px) {
+  .reason {
+    width: 100%;
+  }
+
+  .rgrid {
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 5px 0 1px 0;
+  }
+
+  .brgrid {
+      height: 14.5rem;
+      width: 20.6rem;
+      font-size: 1rem;
+  }
+
+  .brgrid h3 {
+    font-size: 1.4rem;
+  }
+
+  .brgrid p {
+    transform: translateY(-10px);
+  }
+
+  .reason h2 {
+   padding: 0.3rem 0 0 2rem;
+  }
+
+  .asked {
+    padding: 0 2.7rem 0 0;
+  }
+
+  .questions h2 {
+    padding: 1rem 0 0 2.5rem;
+  }
+
+  .faq {
+    width: 465px;
+  }
+
+  .faq>summary {
+    font-size: 1.2rem;
+        padding: 1.2rem 1.6rem;
+  }
+.questions {
+  width: 100%;
+  max-width: 655px;
+}
+footer{
+ width: 100%;
+  max-width: 655px;
+}
+.bottom{
+ width: 100%;
+  max-width: 655px;
+}
+.contact-us{
+  width: 100%;
+  max-width: 655px;
+  padding: 1.5rem 0 0.0625rem 0rem;
+}
 .contact-us h3{
-    padding: 1rem 0 0 15rem
+  width: 100%;
+  max-width: 655px;
+  text-align: left;
+  padding: 0rem 0rem 0rem 2.5rem;
+}
+.Email{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0rem 0rem 0rem 2.5rem;
+  row-gap: 1rem;
+}
+.Email input{
+  width: 18.4rem;
+}
+.center p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0rem 0rem 0rem 2.5rem;
+}
+.links{
+  padding: 0rem 0rem 0rem 0rem;
+}
+.links ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0rem 0rem 0rem 2.5rem;
+}
+.lang-changer{
+  padding: 1rem 0rem 0rem 2.5rem;
+}
+.end{
+   padding: 1rem 0rem 0rem 2.5rem;
 }
 .end1{
-  color: gray;
-    padding: 0rem 0.125rem 10rem 19rem;
+  padding: 0rem 0rem 10rem 2.5rem;
+}
+main{
+  background-color: black;
+}
 }
