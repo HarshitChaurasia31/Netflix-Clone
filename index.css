@@ -50,20 +50,23 @@ nav {
   box-shadow: inset -0.125rem 1.125rem 1rem 0.5rem;
   /* px → rem (1rem ~ 16px) */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 1rem 0.625rem;
+  padding: 0.4rem 0.625rem 0;
   /* 16px → 1rem, 10px → 0.625rem */
-  gap: 10vw;
+  gap: 25vw;
 }
 
 .rightlogo {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 0.8rem;
 }
-
+.logo svg{
+  width: 175px;
+  height: 100px;
+}
 .box1 {
   display: flex;
   gap: 0.2rem;
@@ -95,13 +98,14 @@ nav button {
   background-color: red;
   border-radius: 0.3rem;
   /* 5px → ~0.3rem */
-  padding: 0.5rem 1.1rem;
+  padding: 0.4rem 1rem;
   /* 8px → 0.5rem, 18px → 1.1rem */
   color: white;
   font-weight: 700;
   /* bold → numeric weight */
   cursor: pointer;
   font-size: 0.94rem;
+  font-family: "Poppins", sans-serif;
 }
 
 nav button:hover {
@@ -110,17 +114,17 @@ nav button:hover {
 
 .center {
   color: white;
-text-align: center;
-padding: 9.4rem 0.6rem 8.7rem;
+  text-align: center;
+  padding: 9.4rem 0.6rem 8.7rem;
 }
 
 .center h1 {
   font-size: 4.375rem;
-padding: 0 24vw 0;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 800;
+  padding: 0 24vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
 }
 
 .center h3 {
@@ -133,26 +137,28 @@ font-weight: 800;
 
 .center p {
   font-size: 1.125rem;
+  transform: translateY(-0.8rem);
 }
 
 .Email {
   display: flex;
-justify-content: center;
-align-items: center;
-gap: 0.625rem;
-font-family: "Poppins", sans-serif;
-font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transform: translateY(-0.5rem);
 }
 
 .Email input {
   border: 0.06rem solid rgb(147, 143, 143);
-background-color: transparent;
-font-weight: 700;
-color: gainsboro;
-font-size: 1.06rem;
-width: 26.4rem;
-padding: 0.8rem 1.9rem 1rem;
-border-radius: 0.3rem;
+  background-color: transparent;
+  font-weight: 700;
+  color: gainsboro;
+  font-size: 1.06rem;
+  width: 26.4rem;
+  padding: 0.8rem 1.9rem 1rem;
+  border-radius: 0.3rem;
 }
 
 .Email input::placeholder {
@@ -174,17 +180,17 @@ border-radius: 0.3rem;
 } */
 .Email button {
   display: flex;
-justify-content: center;
-align-items: center;
-gap: 0.3rem;
-border: none;
-background-color: red;
-border-radius: 0.3rem;
-color: white;
-padding: 0.6rem 0;
-width: 13.1rem;
-font-size: 1.6rem;
-font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  background-color: red;
+  border-radius: 0.3rem;
+  color: white;
+  padding: 0.6rem 0;
+  width: 13.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .Email button:hover {
@@ -201,22 +207,22 @@ font-weight: 700;
 
 .fill {
   background: linear-gradient(to right,
-      rgba(33, 13, 22, 1) 16%,
+      rgb(114, 38, 72) 16%,
       rgba(184, 40, 105, 1),
       rgba(229, 9, 20, 1),
       rgba(184, 40, 105, 1),
       rgba(33, 13, 22, 1) 84%);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 0.3rem;
 }
 
 .trending {
-  box-shadow: inset -0.125rem 1.125rem 1rem 0.44rem;
   background-color: black;
   height: 27.5rem;
   scrollbar-width: none;
   overflow: hidden;
   position: relative;
+  box-shadow:  inset 0px 20px 20px 0px rgb(45 61 124 / 60%), inset 0px 20px 10px 0px rgb(233 233 233 / 8%);
 }
 
 .trending h2:before {
@@ -239,22 +245,23 @@ font-weight: 700;
 
 .trending h2 {
   color: white;
-padding: 0 6.25rem 0;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20rem 0;
 
 }
 
 .scroll-btn {
   position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background: rgba(0, 0, 0, 0.5);
-color: white;
-border: none;
-font-size: 1.5rem;
-padding: 0.6rem;
-cursor: pointer;
-border-radius: 50%;
-z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .scroll-btn.left {
@@ -267,13 +274,13 @@ z-index: 2;
 
 .trending ul {
   width: 56vw;
-overflow-x: auto;
-display: flex;
-list-style: none;
-justify-content: flex-start;
-align-items: center;
-gap: 0.3rem;
-padding: 0 16.6rem 0;
+  overflow-x: auto;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0 17.6rem 0;
 }
 
 .trending ul::-webkit-scrollbar {
@@ -286,21 +293,21 @@ padding: 0 16.6rem 0;
 }
 
 .trending ul li img {
-  border-radius: 1.44rem;
+  border-radius: 7px;
 }
 
 .trending ul li p {
-  text-shadow: 0.125rem 0.19rem 0.125rem white;
--webkit-text-stroke: 0.125rem rgb(212, 212, 212);
-font-size: 6.25rem;
-font-weight: 900;
-transform: translateX(1.56rem) translateY(6.9rem);
-position: sticky;
+  text-shadow: 0.3rem 0.1rem 2rem #000000;
+  -webkit-text-stroke: 0.125rem rgb(212, 212, 212);
+  font-size: 6.25rem;
+  font-weight: 900;
+  transform: translateX(1.56rem) translateY(6.9rem);
+  position: sticky;
 }
 
 #ten {
   transform: translateX(4.25rem) translateY(6.9rem);
-position: sticky;
+  position: sticky;
 }
 
 .ten {
@@ -310,34 +317,34 @@ position: sticky;
 .reason {
   /* display: grid; */
   color: white;
-background-color: black;
-padding-top: 0.5rem;
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-width: 100vw;
+  background-color: black;
+  padding-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100vw;
 }
 
 .reason h2 {
-  padding: 0.3rem 0 0 5.6rem;
+  padding: 0.3rem 0 0 20rem;
 }
 
 .rgrid {
   padding: 0 8.7rem 0 5.3rem;
-display: flex;
-justify-content: center;
-align-items: center;
-grid-template-columns: repeat(4, 1fr);
-column-gap: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.6rem;
   /* background: linear-gradient(149deg, #192247 0%, #210e17 96.86%); */
 }
 
 .brgrid {
- background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-border-radius: 0.5rem;
-height: 18.75rem;
-width: 18.6rem;
-padding: 0.3rem 1.25rem;
-position: relative;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 0.5rem;
+  height: 18.75rem;
+  width: 18.6rem;
+  padding: 0.3rem 1.25rem;
+  position: relative;
 }
 
 .rgrid p {
@@ -356,16 +363,16 @@ position: relative;
 
 .questions {
   background-color: black;
-color: white;
-padding: 2.2rem 0 0.1rem 0;
+  color: white;
+  padding: 2.2rem 0 0.1rem 0;
 }
 
 .questions h2 {
-padding: 0.3rem 0 0 5.6rem;
+  padding: 1.3rem 0 0 19.6rem;
 }
 
 .asked {
-  padding: 0.3rem 0 0 5.6rem;
+  padding: 0rem 0 0 8.6rem;
 }
 
 .asked ul {
@@ -380,10 +387,10 @@ padding: 0.3rem 0 0 5.6rem;
 
 .faq {
   background-color: rgb(53, 53, 53);
-width: 78vw;
-margin: 0.75rem auto;
-overflow: hidden;
-transition: background-color 0.3s ease;
+  width: 78vw;
+  margin: 0.75rem auto;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .faq:hover {
@@ -393,13 +400,13 @@ transition: background-color 0.3s ease;
 
 .faq>summary {
   display: flex;
-justify-content: space-between;
-align-items: center;
-font-size: 1.56rem;
-font-weight: 500;
-padding: 1.25rem 1.5rem;
-cursor: pointer;
-list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.56rem;
+  font-weight: 500;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
 }
 
 .faq>summary::-webkit-details-marker,
@@ -420,17 +427,17 @@ list-style: none;
 
 .faq p {
   padding: 0 1.5rem 1.25rem 1.5rem;
-font-size: 1.5625rem;
-line-height: 1.6;
-color: white;
-animation: fadeIn 0.3s ease;
+  font-size: 1.5625rem;
+  line-height: 1.6;
+  color: white;
+  animation: fadeIn 0.3s ease;
 }
 
 /* smooth text fade */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY( -3.125rem);
+    transform: translateY(-3.125rem);
   }
 
   to {
@@ -441,13 +448,13 @@ animation: fadeIn 0.3s ease;
 
 .bottom {
   background-color: black;
-padding: 2.5rem 0 0 0;
+  padding: 2.5rem 0 0 0;
 }
 
 .contact-us {
   background-color: black;
-color: gainsboro;
-padding: 2.5rem 0 0.0625rem 4.375rem;
+  color: gainsboro;
+  padding: 2.5rem 0 0.0625rem 4.375rem;
 }
 
 .contact-us a {
@@ -456,20 +463,20 @@ padding: 2.5rem 0 0.0625rem 4.375rem;
 
 footer {
   background-color: black;
-padding: 1.25rem 0 0 0;
+  padding: 1.25rem 0 0 0;
 }
 
 .links {
   background-color: black;
-  padding: 0 0 0 0;
+  padding: 1rem 0 0 17rem;
 }
 
 .links ul {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-row-gap: 0.9375rem;
-justify-items: start;
-align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.9375rem;
+  justify-items: start;
+  align-items: center;
 }
 
 .links ul li a {
@@ -481,17 +488,24 @@ align-items: center;
 }
 
 .lang-changer {
- width: 10vw;
-padding: 1.25rem 0.125rem 0.1875rem 3.625rem;
+  width: 10vw;
+  padding: 3.25rem 0.125rem 0.1875rem 19rem;
 }
 
 .box2 {
   padding: 0.6875rem 0 0.6875rem 0;
-width: 9.375rem;
-column-gap: 0.1875rem;
+  width: 9.375rem;
+  column-gap: 0.1875rem;
 }
 
 .end {
   color: gainsboro;
-padding: 1.25rem 0.125rem 12.5rem 3.625rem;
+  padding: 1.25rem 0.125rem 0.5rem 19rem;
+}
+.contact-us h3{
+    padding: 1rem 0 0 15rem
+}
+.end1{
+  color: gray;
+    padding: 0rem 0.125rem 10rem 19rem;
 }
