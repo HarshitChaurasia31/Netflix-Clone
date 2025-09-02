@@ -159,7 +159,7 @@ nav button:hover {
   color: gainsboro;
   font-size: 1.06rem;
   width: 26.4rem;
-  padding: 0.8rem 1.9rem 1rem;
+  padding: 0.8rem 1.5rem 1rem;
   border-radius: 0.3rem;
 }
 
@@ -514,17 +514,141 @@ footer {
   color: gray;
   padding: 0rem 0.125rem 10rem 19rem;
 }
+@media only screen and (min-width: 1024px){
+  nav{
+    justify-content: space-around;
+    gap: 37vw;
+    padding: 0rem 0.625rem 0;
+  }
+  .logo svg{
+    width: 150px;
+    height: 100px;
+  }
+  .box3{
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  .box3 select{
+    font-size: 0.8rem;
+  }
+  nav button{
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+  }
+  .center{
+    padding: 7.4rem 0.3rem 8.7rem;
+  }
+  .center h1{
+    padding: 0 23vw 0;
+    font-size: 3.3rem;
+  }
+  .center h3{
+    font-size: 1.4rem;
+    transform: translateY(-1.4rem);
+  }
+  .center p{
+    font-size: 1.1rem;
+    padding-top: 10px;
+  }
+  .Email input{
+    width: 21rem;
+    padding: 0.8rem 1rem 1rem;
+    height: 2rem;
+  }
+  .Email button{
+    height: 3.8rem;
+    font-size: 1.7rem;
+  }
+  .trending h2{
+    padding: 10px 8rem 0;
+  }
+  .trending ul{
+    padding: 0 5.6rem 0;
+    width: 77vw;
+  }
+  .reason h2{
+    padding: 10px 8rem 0;
+  }
+  .rgrid{
+    padding: 0 9.7rem 0 7.5rem;
+    column-gap: 1.4rem;
+  }
+  .brgrid h3{
+    font-size: 1.4rem;
+  }
+  .brgrid{
+    height: 17.75rem;
+  }
+  .rgrid p{
+    font-size: 0.95rem;
+  }
+  .questions h2{
+    padding: 10px 8rem 0;
+  }
+  .asked{
+    padding: 10px 8rem 0 1rem;
+  }
+  #center{
+    padding: 4.4rem 0.3rem 0rem;
+  }
+  #email input{
+    width: 44.4rem;
+  }
+  .contact-us h3 {
+    padding: 1rem 0 0 4rem;
+}
+.links {
+    background-color: black;
+    padding: 1rem 0 0 6rem;
+}
+.lang-changer {
+    width: 10vw;
+    padding: 3.25rem 0.125rem 0.1875rem 8rem;
+}
+.end {
+    color: gainsboro;
+    padding: 1.25rem 0.125rem 0.5rem 8rem;
+}
+.end1 {
+    color: gray;
+    padding: 0rem 0.125rem 10rem 8rem;
+}
+}
+
 
 @media only screen and (max-width:500px) {
+  body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* removes horizontal scrollbar */
+  overflow-y: auto;
+  min-height: 100vh;
+  background:black;
+}
+  .dark {
+  width: 100%;
+  height: 90vh;         /* fixed section height */
+  overflow: hidden;     /* hide the extra parts of zoomed image */
+}
+
+.dark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* crop image to fill */
+  object-position: center; /* zoom from center */
+  transform: scale(1.2);   /* zoom in */
+}
   .reason {
     width: 100%;
     max-width: 700px;
     transform: translateY(-85px);
   }
-  .trending{
+
+  .trending {
     width: 100%;
     max-width: 700px;
   }
+
   .rgrid {
     flex-direction: column;
     row-gap: 10px;
@@ -532,9 +656,9 @@ footer {
   }
 
   .brgrid {
-      height: 14.5rem;
-      width: 20.6rem;
-      font-size: 1rem;
+    height: 14.5rem;
+    width: 20.6rem;
+    font-size: 1rem;
   }
 
   .brgrid h3 {
@@ -546,7 +670,7 @@ footer {
   }
 
   .reason h2 {
-   padding: 0.3rem 0 0 2rem;
+    padding: 0.3rem 0 0 2rem;
   }
 
   .asked {
@@ -563,98 +687,173 @@ footer {
 
   .faq>summary {
     font-size: 1.2rem;
-        padding: 1.2rem 1.6rem;
+    padding: 1.2rem 1.6rem;
   }
-.questions {
-  width: 100%;
-  max-width: 700px;
-  transform: translateY(-85px);
-}
-footer{
- width: 100%;
-  max-width: 700px;
-  transform: translateY(-85px);
-}
-.bottom{
- width: 100%;
-  max-width: 700px;
-  transform: translateY(-85px);
-}
-.contact-us{
-  width: 100%;
-  max-width: 655px;
-  padding: 1.5rem 0 0.0625rem 0rem;
-}
-.contact-us h3{
-  width: 100%;
-  max-width: 655px;
-  text-align: left;
-  padding: 0rem 0rem 0rem 2.5rem;
-}
-.Email{
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0rem 0rem 0rem 2.5rem;
-  row-gap: 1rem;
-}
-.Email input{
-  width: 18.4rem;
-}
-.center p{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
-  padding: 0rem 0rem 0rem 2.5rem;
-}
-.links{
-  padding: 0rem 0rem 0rem 0rem;
-  transform: translateY(-85px);
-}
-.links ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0rem 0rem 0rem 2.5rem;
-}
-.lang-changer{
-  padding: 1rem 0rem 0rem 2.5rem;
-  transform: translateY(-85px);
-}
-.end{
-   padding: 1rem 0rem 0rem 2.5rem;
-   transform: translateY(-85px);
-}
-.end1{
-  padding: 0rem 0rem 16rem 2.5rem;
-  transform: translateY(-85px);
-}
-main{
-  background-color: black;
-}
-.trending h2{
-  padding: 1rem 2.5rem 0;
-}
-.trending ul li img{
-  padding:0.5rem 0rem 0rem 0rem;
-  width: 130px; 
-  height: auto;
-  border-radius: 15px;
-}
-.trending ul{
-  width: 100%;
-  max-width: 700px;
-  padding: 0rem 0rem 0rem 0rem;
-  gap: 0px;
-}
-.trending ul li p {
-  font-size: 4.25rem;
-  transform: translateX(1.7rem) translateY(3.9rem);;
-}
-.trending ul li{
-  display: flex;
-  gap: 0px;
-}
+
+  .questions {
+    width: 100%;
+    max-width: 700px;
+    transform: translateY(-85px);
+  }
+
+  footer {
+    width: 100%;
+    max-width: 700px;
+    transform: translateY(-85px);
+  }
+
+  .bottom {
+    width: 100%;
+    max-width: 700px;
+    transform: translateY(-85px);
+  }
+
+  .contact-us {
+    width: 100%;
+    max-width: 655px;
+    padding: 1.5rem 0 0.0625rem 0rem;
+  }
+
+  .contact-us h3 {
+    width: 100%;
+    max-width: 655px;
+    text-align: left;
+    padding: 0rem 0rem 0rem 2.5rem;
+  }
+
+  .Email {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0rem 0rem 0rem 2.5rem;
+    row-gap: 1rem;
+  }
+
+  .Email input {
+    width: 18.4rem;
+  }
+
+  .center p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0rem 0rem 0rem 2.5rem;
+  }
+
+  .links {
+    padding: 0rem 0rem 0rem 0rem;
+    transform: translateY(-85px);
+  }
+
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0rem 0rem 0rem 2.5rem;
+  }
+
+  .lang-changer {
+    padding: 1rem 0rem 0rem 2.5rem;
+    transform: translateY(-85px);
+  }
+
+  .end {
+    padding: 1rem 0rem 0rem 2.5rem;
+    transform: translateY(-85px);
+  }
+
+  .end1 {
+    padding: 1rem 2.5rem;   /* smaller padding */
+    transform: none;
+  }
+
+  .trending h2 {
+    padding: 1rem 2.5rem 0;
+  }
+
+  .trending ul li img {
+    padding: 0.5rem 0rem 0rem 0rem;
+    width: 130px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .trending ul {
+    width: 100%;
+    max-width: 700px;
+    padding: 0rem 0rem 0rem 0rem;
+    gap: 0px;
+  }
+
+  .trending ul li p {
+    font-size: 4.25rem;
+    transform: translateX(1.7rem) translateY(3.9rem);
+    ;
+  }
+
+  .trending ul li {
+    display: flex;
+    gap: 0px;
+  }
+
+  .logo svg {
+    width: 99px;
+    height: 88px;
+  }
+
+  nav {
+    padding: 0rem 0rem 0;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-around;
+    gap: 45px;
+  }
+
+  .box3 select {
+    font-size: 0.3rem;
+  }
+
+  .box3 {
+    gap: 0.1rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  main {
+    background-color: black;
+  }
+
+  .center h1 {
+    font-size: 2rem;
+    padding: 0 0 0;
+  }
+
+  .center h3 {
+    font-size: 1rem;
+    transform: translateY(-0.9rem);
+  }
+
+  #enter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .email {
+    padding: 0 0 0 0.3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .center{
+    padding: 4.4rem 0.6rem 8.7rem;
+  }
+  .box3 select option{
+    font-size: 1rem;
+  }
+  nav button{
+    padding: 0.3rem 0.7rem;
+    font-size: 0.84rem;
+  }
 }
