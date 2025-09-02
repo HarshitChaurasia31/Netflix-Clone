@@ -518,8 +518,13 @@ footer {
 @media only screen and (max-width:500px) {
   .reason {
     width: 100%;
+    max-width: 700px;
+    transform: translateY(-85px);
   }
-
+  .trending{
+    width: 100%;
+    max-width: 700px;
+  }
   .rgrid {
     flex-direction: column;
     row-gap: 10px;
@@ -562,15 +567,18 @@ footer {
   }
 .questions {
   width: 100%;
-  max-width: 655px;
+  max-width: 700px;
+  transform: translateY(-85px);
 }
 footer{
  width: 100%;
-  max-width: 655px;
+  max-width: 700px;
+  transform: translateY(-85px);
 }
 .bottom{
  width: 100%;
-  max-width: 655px;
+  max-width: 700px;
+  transform: translateY(-85px);
 }
 .contact-us{
   width: 100%;
@@ -602,6 +610,7 @@ footer{
 }
 .links{
   padding: 0rem 0rem 0rem 0rem;
+  transform: translateY(-85px);
 }
 .links ul{
   display: flex;
@@ -612,14 +621,40 @@ footer{
 }
 .lang-changer{
   padding: 1rem 0rem 0rem 2.5rem;
+  transform: translateY(-85px);
 }
 .end{
    padding: 1rem 0rem 0rem 2.5rem;
+   transform: translateY(-85px);
 }
 .end1{
-  padding: 0rem 0rem 10rem 2.5rem;
+  padding: 0rem 0rem 16rem 2.5rem;
+  transform: translateY(-85px);
 }
 main{
   background-color: black;
+}
+.trending h2{
+  padding: 1rem 2.5rem 0;
+}
+.trending ul li img{
+  padding:0.5rem 0rem 0rem 0rem;
+  width: 130px; 
+  height: auto;
+  border-radius: 15px;
+}
+.trending ul{
+  width: 100%;
+  max-width: 700px;
+  padding: 0rem 0rem 0rem 0rem;
+  gap: 0px;
+}
+.trending ul li p {
+  font-size: 4.25rem;
+  transform: translateX(1.7rem) translateY(3.9rem);;
+}
+.trending ul li{
+  display: flex;
+  gap: 0px;
 }
 }
